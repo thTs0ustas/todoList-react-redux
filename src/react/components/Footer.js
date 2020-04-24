@@ -4,7 +4,8 @@ import { VisibilityFilters } from "../../redux/helperData/helperData";
 
 const Footer = () => (
   <p>
-    Show: <FilterLink filter={VisibilityFilters.SHOW_ALL}>All</FilterLink>
+    Show:  
+    <FilterLink filter={VisibilityFilters.SHOW_ALL}>All</FilterLink>
     {", "}
     <FilterLink filter={VisibilityFilters.SHOW_ACTIVE}>Active</FilterLink>
     {", "}
