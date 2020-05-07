@@ -18,9 +18,7 @@ export const todos = (state = [], action) => {
     case TOGGLE_TODO:
       return state.map((todo, index) => {
         if (index === action.index) {
-          return {...todo, 
-            complete: !todo.complete,
-          }
+          return { ...todo, complete: !todo.complete };
         }
         return todo;
       });
